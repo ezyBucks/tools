@@ -13,7 +13,7 @@ services:
       - "5432:5432"
 
   backend:
-    image: ezybucks/backend:latest
+    image: jallier/ezybucks_backend:latest
     ports:
       - "8081:8081"
     depends_on:
@@ -23,7 +23,7 @@ services:
       NODE_ENV: production
 
   frontend:
-    image: ezybucks/frontend:latest
+    image: jallier/ezybucks_frontend:latest
     ports: 
       - "3001:3000"
     depends_on: 
